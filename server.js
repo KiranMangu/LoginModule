@@ -12,8 +12,12 @@ app.get('/', (req, res) => {
     console.log('Backend: Server response');
 });
 
+app.get('/app', (req, res) => {
+    console.log('Backend: Server response /app');
+});
+
 db();
 
 app.listen(process.env.PORT, () => {
-    console.log('Server running on Port: ' + process.env.PORT);
+    console.log('Express: Server running on Port: ' + process.env.PORT);
 })

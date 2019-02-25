@@ -6,15 +6,15 @@ export function db() {
     const connection = mongoose.connection;
 
     connection.on('error', (error) => {
-        console.log(`Error Mongoose: Error connecting the Mongo DB with message: ${error}`);
+        console.log(`Mongoose Error: Error connecting the Mongo DB with message: ${error}`);
     });
     connection.on('connected', () => {
-        console.log("Connected Mongoose: Successfully connected with MONGO DB");
+        console.log("Mongoose Connected: Successfully connected with MONGO DB");
     });
     connection.once('open', () => {
-        console.log("Success Mongoose: Successfully opened connection on MONGO DB");
+        console.log("Mongoose Success: Successfully opened connection on MONGO DB");
     });
     connection.on('disconnected', () => {
-        console.log("Disconnected Mongoose: Successfully disconnected from MONGO DB");
+        console.log("Mongoose Disconnected: Successfully disconnected from MONGO DB");
     });
 };
