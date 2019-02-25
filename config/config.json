@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "PORT": "3001",
+        "MONGO_URL": "mongodb://loginuser:User123@ds149875.mlab.com:49875/loginusers"
+    },
+    "prod": {
+        "PORT": "3002",
+        "MONGO_URL": ""
+    }
+}
