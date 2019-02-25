@@ -1,7 +1,8 @@
 {
     "dev": {
         "PORT": "3001",
-        "MONGO_URL": "mongodb://loginuser:User123@ds149875.mlab.com:49875/loginusers"
+        "MONGO_URL": "mongodb://user:user123@ds233571.mlab.com:33571/taskdb"
+        
     },
     "prod": {
         "PORT": "3002",
